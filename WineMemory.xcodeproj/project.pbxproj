@@ -11,6 +11,15 @@
 		481332242860ADE6009812DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481332232860ADE6009812DF /* ContentView.swift */; };
 		481332262860ADE7009812DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481332252860ADE7009812DF /* Assets.xcassets */; };
 		481332292860ADE7009812DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481332282860ADE7009812DF /* Preview Assets.xcassets */; };
+		481332302860CA20009812DF /* WineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4813322F2860CA20009812DF /* WineListView.swift */; };
+		481332322860D362009812DF /* WineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481332312860D362009812DF /* WineDetailView.swift */; };
+		481332362860DF11009812DF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481332352860DF11009812DF /* ViewModel.swift */; };
+		481332382861E9FF009812DF /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481332372861E9FF009812DF /* Picker.swift */; };
+		4813323D2861F34E009812DF /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4813323C2861F34E009812DF /* FileManager+Extension.swift */; };
+		481332402861F362009812DF /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4813323E2861F362009812DF /* ZoomableScrollView.swift */; };
+		481332412861F362009812DF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4813323F2861F362009812DF /* ImagePicker.swift */; };
+		4815AFE12862157200788C80 /* MyWineBottle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4815AFE02862157200788C80 /* MyWineBottle.swift */; };
+		4815AFE32862174000788C80 /* MyWineBottleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4815AFE22862174000788C80 /* MyWineBottleError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		481332232860ADE6009812DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		481332252860ADE7009812DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		481332282860ADE7009812DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4813322F2860CA20009812DF /* WineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineListView.swift; sourceTree = "<group>"; };
+		481332312860D362009812DF /* WineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDetailView.swift; sourceTree = "<group>"; };
+		481332352860DF11009812DF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		481332372861E9FF009812DF /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		4813323C2861F34E009812DF /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileManager+Extension.swift"; path = "My Images Starter/My Images/Extensions/FileManager+Extension.swift"; sourceTree = SOURCE_ROOT; };
+		4813323E2861F362009812DF /* ZoomableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomableScrollView.swift; path = "My Images Starter/My Images/UIViewRepresentables/ZoomableScrollView.swift"; sourceTree = SOURCE_ROOT; };
+		4813323F2861F362009812DF /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = "My Images Starter/My Images/UIViewRepresentables/ImagePicker.swift"; sourceTree = SOURCE_ROOT; };
+		4815AFE02862157200788C80 /* MyWineBottle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWineBottle.swift; sourceTree = "<group>"; };
+		4815AFE22862174000788C80 /* MyWineBottleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWineBottleError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				481332212860ADE6009812DF /* WineMemoryApp.swift */,
-				481332232860ADE6009812DF /* ContentView.swift */,
+				481332342860DEBF009812DF /* Views */,
+				481332392861EA09009812DF /* ViewModels */,
+				481332332860DEA6009812DF /* Models */,
+				4813323A2861F2A7009812DF /* UIViewRepresentables */,
+				4813323B2861F30A009812DF /* Extensions */,
 				481332252860ADE7009812DF /* Assets.xcassets */,
 				481332272860ADE7009812DF /* Preview Content */,
 			);
@@ -65,6 +87,51 @@
 				481332282860ADE7009812DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		481332332860DEA6009812DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				481332372861E9FF009812DF /* Picker.swift */,
+				4815AFE02862157200788C80 /* MyWineBottle.swift */,
+				4815AFE22862174000788C80 /* MyWineBottleError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		481332342860DEBF009812DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				481332232860ADE6009812DF /* ContentView.swift */,
+				4813322F2860CA20009812DF /* WineListView.swift */,
+				481332312860D362009812DF /* WineDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		481332392861EA09009812DF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				481332352860DF11009812DF /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4813323A2861F2A7009812DF /* UIViewRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				4813323F2861F362009812DF /* ImagePicker.swift */,
+				4813323E2861F362009812DF /* ZoomableScrollView.swift */,
+			);
+			path = UIViewRepresentables;
+			sourceTree = "<group>";
+		};
+		4813323B2861F30A009812DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4813323C2861F34E009812DF /* FileManager+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +204,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481332362860DF11009812DF /* ViewModel.swift in Sources */,
+				481332382861E9FF009812DF /* Picker.swift in Sources */,
+				4815AFE32862174000788C80 /* MyWineBottleError.swift in Sources */,
+				481332322860D362009812DF /* WineDetailView.swift in Sources */,
+				481332412861F362009812DF /* ImagePicker.swift in Sources */,
+				481332302860CA20009812DF /* WineListView.swift in Sources */,
 				481332242860ADE6009812DF /* ContentView.swift in Sources */,
+				4813323D2861F34E009812DF /* FileManager+Extension.swift in Sources */,
+				4815AFE12862157200788C80 /* MyWineBottle.swift in Sources */,
+				481332402861F362009812DF /* ZoomableScrollView.swift in Sources */,
 				481332222860ADE6009812DF /* WineMemoryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +346,7 @@
 				DEVELOPMENT_TEAM = LXSSTNCP9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to use the camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +376,7 @@
 				DEVELOPMENT_TEAM = LXSSTNCP9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to use the camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
